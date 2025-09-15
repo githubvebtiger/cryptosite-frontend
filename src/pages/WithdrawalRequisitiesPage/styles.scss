@@ -1,0 +1,106 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.withdrawal-page .input-wrapper-custom {
+  width: fit-content;
+}
+
+.withdrawal-requisities-page {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @include fluid-font(24px, 32px, 32px, 32px);
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 22px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .control-input {
+      width: 416px;
+    }
+
+    button {
+      min-width: 149px;
+      max-width: 149px;
+      height: 48px;
+    }
+  }
+}
+
+.dark {
+  color: white;
+
+  .withdrawal-page .input-wrapper-custom {
+    width: fit-content;
+  }
+
+  .show input {
+    color: #636363;
+  }
+
+  .withdrawal-requisities-page-wrapper {
+    background: $dark-bg;
+
+    h2 {
+      color: white;
+    }
+
+    .form {
+      input {
+        background: linear-gradient(90deg, #0f101d 0%, #1b2133 100.03%);
+      }
+
+      .control-input {
+        background: linear-gradient(90deg, #0f101d 0%, #1b2133 100.03%);
+        border: 1px solid rgba(32, 37, 54, 1);
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .withdrawal-page .input-wrapper-custom {
+    width: 100%;
+  }
+  .withdrawal-requisities-page {
+    .form {
+      flex-direction: column;
+
+      .control-input {
+        width: 100%;
+      }
+
+      button {
+        min-width: 149px;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .dark {
+    .withdrawal-page .input-wrapper-custom {
+      width: 100%;
+    }
+  }
+}
+
+.requisite-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dark-theme {
+  .active-requisite {
+    color: #ffffff !important;
+    opacity: 1 !important;
+  }
+}

@@ -1,0 +1,12 @@
+@import "./styles/reset";
+@import "./styles/variables";
+@import "./styles/global";
+
+/* В файле стилей */
+.no-scroll {
+  overflow: hidden;
+  max-height: 100vh;
+}
+.dark {
+
+}

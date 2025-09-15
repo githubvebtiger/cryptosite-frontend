@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+.no-container{
+  padding: 0 32px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+
+  &.absolute{
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+  }
+  a {
+    text-decoration: none;
+    color: $slate-gray;
+    cursor: pointer;
+  }
+  .link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  a:active, .link:active {
+    color: $bright-blue;
+  }
+
+
+  a:hover, .link:hover {
+    color: $bright-blue;
+  }
+
+}

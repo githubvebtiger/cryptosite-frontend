@@ -1,0 +1,140 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @include fluid-font(24px, 32px, 32px, 32px);
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 22px;
+
+  }
+
+  .profile-form {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 864px;
+
+    .control-input {
+      width: 100%;
+    }
+
+    button {
+      max-width: 100%;
+      grid-column: span 2;
+    }
+
+    .verification-banners {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+  }
+
+  .profile-form {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 864px;
+
+    .control-input {
+      width: 100%;
+    }
+
+    button {
+      max-width: 100%;
+      grid-column: span 2;
+    }
+
+    .verification-banners {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.dark {
+  .profile-page-wrapper {
+    background: $dark-bg;
+
+    .profile-page {
+      background: $dark-bg;
+
+      h2 {
+        color: white;
+      }
+
+      .control-input-phone {
+        background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+        border-left: 1px solid rgba(32, 37, 54, 1);
+        border: 0.1px solid rgba(32, 37, 54, 1);
+        color: rgba(157, 157, 161, 1);
+      }
+
+      #phone-border {
+        border-left: 1px solid rgba(32, 37, 54, 1);
+      }
+
+      .profile-form {
+        input {
+          background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+        }
+
+        .control-input {
+          color: rgba(157, 157, 161, 1);
+          background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+          border: 1px solid rgba(32, 37, 54, 1);
+        }
+      }
+    }
+  }
+}
+
+.profile-page-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .profile-page {
+    .profile-form {
+      .input-wrapper-custom {
+        width: 100% !important;
+        max-width: 416px !important;
+      }
+      display: flex !important;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .profile-page {
+    .profile-form {
+      .input-wrapper-custom {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .control-input {
+        width: 100% !important;
+      }
+
+      button {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}

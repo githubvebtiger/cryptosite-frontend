@@ -1,0 +1,82 @@
+@import "../../../styles/variables";
+
+.register-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 370px;
+  gap: 56px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 22.5px;
+    text-align: center;
+
+    span {
+      color: $royal-blue;
+    }
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+}
+
+.dark {
+  .register-modal {
+    input {
+      background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+
+
+    }
+
+    .control-input {
+      background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+      border: 1px solid rgba(32, 37, 54, 1);
+      color: rgba(157, 157, 161, 1);
+
+      input {
+        background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+
+      }
+
+    }
+
+    .control-input-phone {
+      background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+      border-left: 1px solid rgba(32, 37, 54, 1);
+      border: 0.1px solid rgba(32, 37, 54, 1);
+      color: rgba(157, 157, 161, 1);
+
+      input {
+        background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+
+      }
+    }
+
+    #phone-border {
+      border-left: 1px solid rgba(32, 37, 54, 1);
+    }
+
+    .control-input {
+      background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+      border: 1px solid rgba(32, 37, 54, 1);
+      color: rgba(157, 157, 161, 1);
+    }
+
+    input {
+      background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+
+    }
+  }
+}
+
+
+
+

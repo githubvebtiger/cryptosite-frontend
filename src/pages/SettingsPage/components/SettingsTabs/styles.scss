@@ -1,0 +1,45 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixin";
+
+.settings-tabs {
+  display: flex;
+  gap: 48px;
+  border-bottom: 2px solid $soft-gray;
+  width: fit-content;
+
+  h2 {
+    cursor: pointer;
+    color: $mint-gray;
+    @include fluid-font(16px,24px,24px,32px);
+
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+
+  .active {
+    position: relative;
+
+    h2 {
+      color: $black;
+    }
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      bottom: -2px;
+      height: 2px;
+      width: 100%;
+      background: $royal-blue;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .settings-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

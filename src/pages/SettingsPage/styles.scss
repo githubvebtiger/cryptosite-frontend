@@ -1,0 +1,91 @@
+@import "../../styles/variables";
+.personal-info{
+  max-width: 1000px;
+}
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 22px;
+
+  }
+  .profile-form{
+    display: flex;
+    max-width: 864px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+    .control-input{
+      width: 416px;
+    }
+
+    button {
+      max-width: 304px;
+    }
+  }
+
+}
+.dark{
+    .settings-wrapper{
+      background: $dark-bg;
+      .page{
+        background: $dark-bg;
+        .settings-tabs{
+          border-bottom: 2px solid rgba(32, 37, 54, 1);
+          h2{
+            color: rgba(180, 184, 190, 1);
+          }
+          .active {
+            h2 {
+              color: white;
+            }
+          }
+        }
+        .personal-info{
+          input{
+            background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+
+
+          }
+          .control-input{
+            background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+            border: 1px solid rgba(32, 37, 54, 1);
+            color:rgba(157, 157, 161, 1);
+
+          }
+          .control-input-phone{
+            background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+            border-left: 1px solid rgba(32, 37, 54, 1);
+            border: 0.1px solid rgba(32, 37, 54, 1) ;
+
+            color:rgba(157, 157, 161, 1);
+          }
+          #phone-border{
+            border-left: 1px solid rgba(32, 37, 54, 1);
+          }
+        }
+        .change-password{
+          .control-input{
+            background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+            border: 1px solid rgba(32, 37, 54, 1) ;
+            color: rgba(157, 157, 161, 1);
+          }
+          input{
+            background: linear-gradient(90deg, #0F101D 0%, #1B2133 100.03%);
+
+          }
+        }
+      }
+    }
+}
+
+@media (min-width: 1086px) and (max-width: 1230px) {
+  .personal-info{
+    max-width: 550px;
+  }
+}
+  

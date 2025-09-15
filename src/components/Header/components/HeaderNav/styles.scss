@@ -1,0 +1,32 @@
+@import "../../../../styles/variables";
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav > ul{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+}
+.active-link{
+  color: $bright-blue!important;
+}
+@media (max-width: 880px) {
+  .header__nav {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__nav > ul{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+}

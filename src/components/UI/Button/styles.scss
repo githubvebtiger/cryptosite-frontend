@@ -1,0 +1,47 @@
+@import "../../../styles/variables";
+
+button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-primary {
+  background-color: $royal-blue;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: $bright-blue;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.button-gray{
+  background-color: $light-gray;
+  color: $black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button-gray:hover,
+.button-primary:hover,
+.button-secondary:hover {
+  opacity: 0.8;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

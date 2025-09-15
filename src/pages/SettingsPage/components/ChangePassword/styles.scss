@@ -1,0 +1,39 @@
+.change-password{
+  margin-top: 32px;
+  display: flex;
+  max-width: 416px;
+
+  flex-direction: column;
+  gap: 24px;
+
+  .control-input {
+    max-width: 416px;
+  }
+
+  .control-input-phone {
+    max-width: 416px;
+  }
+
+  button {
+    max-width: 304px;
+  }
+}
+
+@media (max-width: 880px) {
+  .change-password {
+    flex-direction: column;
+    max-width: 100%;
+
+    .control-input {
+      max-width: 100%;
+    }
+
+    .control-input-phone {
+      max-width: 100%;
+    }
+
+    button {
+      max-width: 100%;
+    }
+  }
+}
